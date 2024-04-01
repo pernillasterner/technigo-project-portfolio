@@ -1,0 +1,115 @@
+.project-section {
+  padding: var(--general-padding);
+  display: flex;
+  justify-content: center;
+  height: auto;
+  padding: 128px 16px;
+  padding-top: 0;
+
+  .project-container {
+    .project-title {
+      text-align: center;
+      margin: 1em 0;
+      @media screen and (max-width: 900px) {
+        font-size: 56px;
+      }
+    }
+
+    .project-list {
+      // padding: 128px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 64px;
+      @media (min-width: 1280px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 128px 230px 124px;
+        gap: 128px;
+      }
+      .project-item {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto;
+        gap: 40px;
+        max-width: 900px;
+        @media screen and (max-width: 667px) {
+          flex-direction: column;
+          margin: 2em 0;
+        }
+        @media screen and (max-width: 900px) {
+          grid-template-columns: 1fr;
+        }
+        @media screen and (max-width: 667px) {
+          margin: 2em 0;
+        }
+
+        .project-image {
+          width: 100%;
+          min-width: 200px;
+          height: 280px;
+          object-fit: cover;
+          border-bottom: 10px solid var(--clr-primary);
+          border-left: 10px solid var(--clr-primary);
+          @media (min-width: 1280px) {
+            width: 100%;
+            height: 280px;
+            max-height: 100%;
+            object-fit: cover;
+            border-bottom: 20px solid var(--clr-primary);
+            border-left: 20px solid var(--clr-primary);
+            flex-shrink: 0;
+          }
+
+          @media (min-width: 1280px) {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+          }
+        }
+
+        .project-details {
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+          @media (min-width: 1280px) {
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+          }
+
+          h3 {
+            font-weight: 600;
+            font-size: 32px;
+            @media screen and (max-width: 900px) {
+              font-size: 24px;
+            }
+          }
+
+          p {
+            font-size: 18px;
+          }
+        }
+
+        .button-wrapper {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 16px;
+          align-self: stretch;
+          @media (min-width: 1280px) {
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            gap: 32px;
+            align-items: end;
+          }
+        }
+      }
+
+      .tn-wrapper {
+        margin: 0 auto;
+      }
+    }
+  }
+}

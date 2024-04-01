@@ -1,0 +1,40 @@
+{
+  "projects": [
+    {
+      "id": 6,
+      "repoName": "final-project-mobile-recycle-app",
+      "publicName": "TechCycle - Buy and sell used phones",
+      "imageUrl": "../../../assets/project-img/techcycle.jpg"
+    },
+    {
+      "id": 5,
+      "repoName": "todo-app-react",
+      "publicName": "Todo App",
+      "imageUrl": "../../../assets/project-img/todo.jpg"
+    },
+    {
+      "id": 4,
+      "repoName": "technigo-project-movies-vite",
+      "publicName": "Movie App",
+      "imageUrl": "../../../assets/project-img/movie.jpg"
+    },
+    {
+      "id": 3,
+      "repoName": "ps-project-happy-thought",
+      "publicName": "Happy Thoughts",
+      "imageUrl": "../../../assets/project-img/happy.jpg"
+    },
+    {
+      "id": 2,
+      "repoName": "technigo-project-music-releases-vite",
+      "publicName": "Music Release App",
+      "imageUrl": "../../../assets/project-img/music.jpg"
+    },
+    {
+      "id": 1,
+      "repoName": "technigo-project-weather-app-2023",
+      "publicName": "Weather App",
+      "imageUrl": "../../../assets/project-img/weather.jpg"
+    }
+  ]
+}

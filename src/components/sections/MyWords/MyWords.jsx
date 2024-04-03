@@ -6,7 +6,7 @@ import { MyWordCard } from "./MyWordCard";
 export const MyWords = () => {
   return (
     <article className="article-container">
-      <Heading level={1} text="My Words" className="article-heading" />
+      <Heading level={2} text="My Words" className="article-heading" />
       <div className="article-list">
         {articles.map((article, index) => (
           <MyWordCard

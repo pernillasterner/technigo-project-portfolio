@@ -28,10 +28,12 @@
   }
 
   .article-heading {
-    text-align: center;
+    text-align: left;
     color: var(--clr-secondary);
-    @media screen and (max-width: 900px) {
+    margin-bottom: 64px;
+    @media screen and (max-width: 667px) {
       font-size: 56px;
+      text-align: center;
     }
   }
 

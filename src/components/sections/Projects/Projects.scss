@@ -4,14 +4,13 @@
   justify-content: center;
   height: auto;
   padding: 128px 16px;
-  padding-top: 0;
 
   .project-container {
     .project-title {
-      text-align: center;
-      margin: 1em 0;
-      @media screen and (max-width: 900px) {
+      text-align: left;
+      @media screen and (max-width: 667px) {
         font-size: 56px;
+        text-align: center;
       }
     }
 
@@ -33,6 +32,7 @@
         grid-template-rows: auto;
         gap: 40px;
         max-width: 900px;
+        margin-top: 64px;
         @media screen and (max-width: 667px) {
           flex-direction: column;
           margin: 2em 0;

@@ -23,15 +23,13 @@
   min-width: 200px;
   max-height: 100%;
   object-fit: cover;
-  border-bottom: 10px solid var(--primary);
-  border-left: 10px solid var(--primary);
+  border-bottom: 10px solid var(--clr-primary);
+  border-left: 10px solid var(--clr-primary);
 }
 
 .article-img img {
-  width: 100%;
-  object-fit: cover;
-  border-bottom: 20px solid var(--secondary);
-  border-left: 20px solid var(--secondary);
+  border-bottom: 20px solid var(--clr-secondary);
+  border-left: 20px solid var(--clr-secondary);
 }
 
 /* ------------ MEDIA QUERIES ------------ */

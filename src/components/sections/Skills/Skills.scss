@@ -52,7 +52,10 @@
     }
 
     .skill-box {
-      text-align: center;
+      text-align: left;
+      @media (max-width: 744px) {
+        text-align: center;
+      }
 
       ul {
         color: #fff;

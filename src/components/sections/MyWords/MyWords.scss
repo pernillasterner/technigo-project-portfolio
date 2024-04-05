@@ -5,14 +5,16 @@
   background-color: var(--light-secondary);
   color: var(--text);
   padding: 128px 16px;
-  gap: 64px;
+  align-items: center;
+  // gap: 64px;
   position: relative;
-  @media (min-width: 1280px) {
-    padding: 128px auto;
-    gap: 64px;
+
+  @media (min-width: 774px) {
+    padding: 128px;
+    // gap: 64px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
   }
 
   &::before {
@@ -22,16 +24,18 @@
     left: 0;
     width: 100%;
     height: 20px;
-    background-image: url(/assets/divider.svg);
+    background-image: url("/assets/divider.svg");
     background-repeat: repeat-x;
     z-index: 1;
   }
 
   .article-heading {
-    text-align: center;
+    display: flex;
     color: var(--clr-secondary);
-    @media screen and (max-width: 900px) {
+    margin-bottom: 64px;
+    @media screen and (max-width: 667px) {
       font-size: 56px;
+      text-align: center;
     }
   }
 
@@ -39,7 +43,8 @@
     display: grid;
     justify-content: center;
     gap: 64px;
-    max-width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
     @media (min-width: 1280px) {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -55,36 +60,16 @@
     align-items: flex-start;
     gap: 24px;
     align-self: stretch;
+    max-width: 564px;
+    @media (max-width: 1279px) and (min-width: 744px) {
+      max-width: 100%;
+    }
   }
 
   // Article image
-  .article-image-container {
-    height: 200px;
+  .article-img-container {
+    max-height: 340px;
     overflow: hidden;
-    border-bottom: 20px solid var(--clr-secondary);
-    @media (min-width: 1280px) {
-      height: 460px;
-      align-self: stretch;
-      border-bottom: 20px solid var(--clr-secondary);
-    }
-    @media (max-width: 1279px) and (min-width: 744px) {
-      height: 340px;
-      align-self: stretch;
-      border-bottom: 20px solid var(--clr-secondary);
-    }
-
-    .article-img {
-      width: 100%;
-      object-fit: cover;
-      border-left: 20px solid var(--clr-secondary);
-      @media (min-width: 1280px) {
-        max-height: 100%;
-      }
-      @media (max-width: 1279px) and (min-width: 744px) {
-        max-height: 100%;
-        object-fit: cover;
-      }
-    }
   }
 
   // Article content

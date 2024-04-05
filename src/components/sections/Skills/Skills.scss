@@ -10,7 +10,7 @@
   .skill-title {
     text-align: center;
     color: var(--clr-white);
-    padding-bottom: 64px;
+    margin-bottom: 64px;
     @media screen and (max-width: 900px) {
       font-size: 56px;
     }
@@ -52,7 +52,10 @@
     }
 
     .skill-box {
-      text-align: center;
+      text-align: left;
+      @media (max-width: 744px) {
+        text-align: center;
+      }
 
       ul {
         color: #fff;
